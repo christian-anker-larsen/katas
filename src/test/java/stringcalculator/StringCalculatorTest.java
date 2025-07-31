@@ -1,6 +1,5 @@
 package stringcalculator;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -9,13 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static stringcalculator.StringCalculator.add;
 
 class StringCalculatorTest {
-
-    StringCalculator stringCalculator;
-
-    @BeforeEach
-    void setUp() {
-        stringCalculator = new StringCalculator();
-    }
 
     @Test
     void isEmpty() {
