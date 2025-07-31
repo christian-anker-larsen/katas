@@ -32,7 +32,10 @@ class StringCalculatorTest {
 
     @Test
     void testAdd2Numbers2() {
-
+        stringCalculator = new StringCalculator();
+        String inputString = "4,5";
+        int sum = stringCalculator.addNumbers(inputString);
+        assertEquals(9, sum);
     }
 
 }
