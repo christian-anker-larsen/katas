@@ -4,10 +4,10 @@ public class StringCalculator {
 
 
     static int add(String numbers) {
-        if(numbers.isEmpty()) {
+        if (numbers.isEmpty()) {
             return 0;
         }
-        String[] strArr  = numbers.split(",");
+        String[] strArr = numbers.split(",");
         if (strArr.length == 1) {
             return Integer.parseInt(numbers);
         }
@@ -23,13 +23,7 @@ public class StringCalculator {
             sum = sum + intArr[i];
         }
 
-        if(numbers.equals("4,5")) {
-            return 9;
-        }
-        if(numbers.equals("5,6")) {
-            return 11;
-        }
-        return 3;
+        return sum;
     }
 
 }
