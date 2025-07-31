@@ -14,12 +14,12 @@ public class StringCalculator {
     }
 
     private static int[] getInts(String[] strArr) {
-        int[] intArr = new int[strArr.length];
+        int[] result = new int[strArr.length];
 
         for (int i = 0; i < strArr.length; i++) {
-            intArr[i] = Integer.parseInt(strArr[i]);
+            result[i] = Integer.parseInt(strArr[i]);
         }
-        return intArr;
+        return result;
     }
 
     private static int calculateSum(int[] intArr) {
