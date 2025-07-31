@@ -6,7 +6,7 @@ public class StringCalculator {
     static int add(String numbers) {
         if (numbers.isEmpty()) return 0;
         String[] strArr = numbers.split(",");
-        if (strArr.length == 1) return Integer.parseInt(numbers);
+        if (!numbers.contains(",")) return Integer.parseInt(numbers);
         return calculateSum(getInts(strArr));
     }
 
