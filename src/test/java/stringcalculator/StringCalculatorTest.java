@@ -38,4 +38,12 @@ class StringCalculatorTest {
         assertEquals(9, sum);
     }
 
+    @Test
+    void testAdd2Numbers3() {
+        stringCalculator = new StringCalculator();
+        String inputString = "5,6";
+        int sum = stringCalculator.addNumbers(inputString);
+        assertEquals(11, sum);
+    }
+
 }
