@@ -6,8 +6,8 @@ public class StringCalculator {
     static int add(String input) {
         if (input.isEmpty()) return 0;
         if (!input.contains(",")) return Integer.parseInt(input);
-        String[] strArr = input.split(",");
-        return calculateSum(getInts(strArr));
+        String[] numbers = input.split(",");
+        return calculateSum(getInts(numbers));
     }
 
     private static int[] getInts(String[] strArr) {
