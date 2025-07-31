@@ -46,4 +46,12 @@ class StringCalculatorTest {
         assertEquals(11, sum);
     }
 
+    @Test
+    void testSingleDigit(){
+        stringCalculator = new StringCalculator();
+        String inputString = "5";
+        int sum = stringCalculator.addNumbers(inputString);
+        assertEquals(5, sum);
+    }
+
 }
