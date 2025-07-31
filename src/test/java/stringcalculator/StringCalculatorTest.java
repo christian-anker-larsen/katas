@@ -24,7 +24,7 @@ class StringCalculatorTest {
 
     @Test
     void testSingleDigit() {
-        assertEquals(5, stringCalculator.addNumbers("5"));
+        assertEquals(5, add("5"));
     }
 
     @ParameterizedTest
