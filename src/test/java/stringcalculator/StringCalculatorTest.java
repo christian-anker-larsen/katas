@@ -39,4 +39,10 @@ class StringCalculatorTest {
         assertEquals(6, add("1\n2,3"));
         assertEquals(7, add("1\n3,3"));
     }
+
+    @Test
+    void semicolon() {
+        assertEquals(3, add("//;\n1;2"));
+        assertEquals(3, add("1;2"));
+    }
 }
