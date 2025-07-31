@@ -3,10 +3,10 @@ package stringcalculator;
 public class StringCalculator {
 
 
-    static int add(String numbers) {
-        if (numbers.isEmpty()) return 0;
-        if (!numbers.contains(",")) return Integer.parseInt(numbers);
-        String[] strArr = numbers.split(",");
+    static int add(String input) {
+        if (input.isEmpty()) return 0;
+        if (!input.contains(",")) return Integer.parseInt(input);
+        String[] strArr = input.split(",");
         return calculateSum(getInts(strArr));
     }
 
