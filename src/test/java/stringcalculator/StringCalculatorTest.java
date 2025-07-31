@@ -35,7 +35,6 @@ class StringCalculatorTest {
             "'5,6', 11"
     })
     void parameterisedTest(String numbers, int expectedSum) {
-        int sum = stringCalculator.addNumbers(numbers);
         assertEquals(expectedSum, StringCalculator.add(numbers));
     }
 }
