@@ -1,5 +1,6 @@
 package stringcalculator;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,7 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class StringCalculatorTest {
 
-    StringCalculator stringCalculator = new StringCalculator();
+    StringCalculator stringCalculator;
+
+    @BeforeEach
+    void setUp() {
+        stringCalculator = new StringCalculator();
+    }
 
     @Test
     void isTrue() {
