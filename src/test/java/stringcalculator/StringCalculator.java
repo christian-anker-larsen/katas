@@ -10,6 +10,19 @@ public class StringCalculator {
         if(inputString.length() == 1){
             return Integer.parseInt(inputString);
         }
+        String[] strArr  = inputString.split(",");
+        int[] intArr = new int[strArr.length];
+
+        for (int i = 0; i < strArr.length; i++) {
+            intArr[i] = Integer.parseInt(strArr[i]);
+        }
+
+        int sum = 0;
+
+        for (int i = 0; i < intArr.length; i++) {
+            sum = sum + intArr[i];
+        }
+
         if(inputString.equals("4,5")) {
             return 9;
         }
