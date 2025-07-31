@@ -20,11 +20,11 @@ public class StringCalculator {
     }
 
     private static int sumOf(int[] intArr) {
-        int sum = 0;
-        for (int i = 0; i < intArr.length; i++) {
-            sum = sum + intArr[i];
+        int result = 0;
+        for (int addend : intArr) {
+            result += addend;
         }
-        return sum;
+        return result;
     }
 
 }
