@@ -7,10 +7,10 @@ public class StringCalculator {
         if (input.isEmpty()) return 0;
         if (!input.contains(",")) return Integer.parseInt(input);
         String[] numbers = input.split(",");
-        return calculateSum(getInts(numbers));
+        return sumOf(valuesFrom(numbers));
     }
 
-    private static int[] getInts(String[] strArr) {
+    private static int[] valuesFrom(String[] strArr) {
         int[] result = new int[strArr.length];
         for (int i = 0; i < strArr.length; i++) {
             result[i] = Integer.parseInt(strArr[i]);
@@ -18,7 +18,7 @@ public class StringCalculator {
         return result;
     }
 
-    private static int calculateSum(int[] intArr) {
+    private static int sumOf(int[] intArr) {
         int sum = 0;
         for (int i = 0; i < intArr.length; i++) {
             sum = sum + intArr[i];
