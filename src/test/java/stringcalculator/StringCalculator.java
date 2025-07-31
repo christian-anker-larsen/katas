@@ -10,7 +10,6 @@ public class StringCalculator {
             return Integer.parseInt(numbers);
         }
         int[] intArr = getInts(strArr);
-
         return calculateSum(intArr);
     }
 
