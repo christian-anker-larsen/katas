@@ -2,6 +2,8 @@ package stringcalculator;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -15,15 +17,15 @@ class StringCalculatorTest {
     }
 
     @Test
-    void testMethod(){
+    void testMethod() {
         int sum = stringCalculator.addNumbers("1,2");
         assertEquals(3, sum);
     }
 
     @Test
-    void isEmpty(){
+    void isEmpty() {
         int sum = stringCalculator.addNumbers("");
-        assertEquals(0,sum);
+        assertEquals(0, sum);
     }
 
     @Test
@@ -39,9 +41,19 @@ class StringCalculatorTest {
     }
 
     @Test
-    void testSingleDigit(){
+    void testSingleDigit() {
         int sum = stringCalculator.addNumbers("5");
         assertEquals(5, sum);
     }
 
+    @ParameterizedTest
+    @CsvSource({
+            "'1,2', 3",
+            "'4,5', 9",
+            "'5,6', 11"
+    })
+    void parameterisedTest(String numbers, int expectedSum) {
+        int sum = stringCalculator.addNumbers(numbers);
+        assertEquals(expectedSum, sum);
+    }
 }
