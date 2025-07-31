@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class StringCalculatorTest {
 
@@ -13,11 +12,6 @@ class StringCalculatorTest {
     @BeforeEach
     void setUp() {
         stringCalculator = new StringCalculator();
-    }
-
-    @Test
-    void isTrue() {
-        assertTrue(true);
     }
 
     @Test
