@@ -17,40 +17,35 @@ class StringCalculatorTest {
     @Test
     void testMethod(){
         stringCalculator = new StringCalculator();
-        String inputString = "1,2";
-        int sum = stringCalculator.addNumbers(inputString);
+        int sum = stringCalculator.addNumbers("1,2");
         assertEquals(3, sum);
     }
 
     @Test
     void isEmpty(){
         stringCalculator = new StringCalculator();
-        String inputString2 ="";
-        int sum = stringCalculator.addNumbers(inputString2);
+        int sum = stringCalculator.addNumbers("");
         assertEquals(0,sum);
     }
 
     @Test
     void testAdd2Numbers2() {
         stringCalculator = new StringCalculator();
-        String inputString = "4,5";
-        int sum = stringCalculator.addNumbers(inputString);
+        int sum = stringCalculator.addNumbers("4,5");
         assertEquals(9, sum);
     }
 
     @Test
     void testAdd2Numbers3() {
         stringCalculator = new StringCalculator();
-        String inputString = "5,6";
-        int sum = stringCalculator.addNumbers(inputString);
+        int sum = stringCalculator.addNumbers("5,6");
         assertEquals(11, sum);
     }
 
     @Test
     void testSingleDigit(){
         stringCalculator = new StringCalculator();
-        String inputString = "5";
-        int sum = stringCalculator.addNumbers(inputString);
+        int sum = stringCalculator.addNumbers("5");
         assertEquals(5, sum);
     }
 
