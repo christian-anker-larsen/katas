@@ -37,5 +37,6 @@ class StringCalculatorTest {
     @Test
     void shouldHandleNewLineCharacter() {
         assertEquals(6, add("1\n2,3"));
+        assertEquals(7, add("1\n3,3"));
     }
 }
