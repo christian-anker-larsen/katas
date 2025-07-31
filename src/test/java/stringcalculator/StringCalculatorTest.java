@@ -33,4 +33,9 @@ class StringCalculatorTest {
     void parameterisedTest(String numbers, int expectedSum) {
         assertEquals(expectedSum, add(numbers));
     }
+
+    @Test
+    void shouldHandleNewLineCharacter() {
+        assertEquals(6, add("1\n2,3"));
+    }
 }
