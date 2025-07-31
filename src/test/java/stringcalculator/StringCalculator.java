@@ -8,7 +8,7 @@ public class StringCalculator {
             return 0;
         }
         if(inputString.length() == 1){
-            return 5;
+            return Integer.parseInt(inputString);
         }
         if(inputString.equals("4,5")) {
             return 9;
