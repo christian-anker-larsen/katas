@@ -9,13 +9,18 @@ public class StringCalculator {
         if (strArr.length == 1) {
             return Integer.parseInt(numbers);
         }
+        int[] intArr = getInts(strArr);
+
+        return calculateSum(intArr);
+    }
+
+    private static int[] getInts(String[] strArr) {
         int[] intArr = new int[strArr.length];
 
         for (int i = 0; i < strArr.length; i++) {
             intArr[i] = Integer.parseInt(strArr[i]);
         }
-
-        return calculateSum(intArr);
+        return intArr;
     }
 
     private static int calculateSum(int[] intArr) {
