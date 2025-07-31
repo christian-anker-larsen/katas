@@ -24,7 +24,10 @@ class StringCalculatorTest {
 
     @Test
     void isEmpty(){
-
+        stringCalculator = new StringCalculator();
+        String inputString2 ="";
+        int sum = stringCalculator.addNumbers(inputString2);
+        assertEquals(0,sum);
     }
 
 }
