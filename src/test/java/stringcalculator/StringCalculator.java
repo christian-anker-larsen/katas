@@ -15,9 +15,7 @@ public class StringCalculator {
             intArr[i] = Integer.parseInt(strArr[i]);
         }
 
-        int sum = calculateSum(intArr);
-
-        return sum;
+        return calculateSum(intArr);
     }
 
     private static int calculateSum(int[] intArr) {
