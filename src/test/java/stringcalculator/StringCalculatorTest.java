@@ -19,6 +19,11 @@ class StringCalculatorTest {
         assertEquals(5, add("5"));
     }
 
+    @Test
+    void returnsNumberValueOfTwoDigitString() {
+        assertEquals(11, add("11"));
+    }
+
     @ParameterizedTest
     @CsvSource({
             "'1,2', 3",

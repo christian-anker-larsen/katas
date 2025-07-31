@@ -7,7 +7,7 @@ public class StringCalculator {
         if(numbers.isEmpty()) {
             return 0;
         }
-        if(numbers.length() == 1){
+        if(numbers.length() == 1 || numbers.length() == 2) {
             return Integer.parseInt(numbers);
         }
         String[] strArr  = numbers.split(",");
