@@ -9,8 +9,7 @@ public class StringCalculator {
         if (strArr.length == 1) {
             return Integer.parseInt(numbers);
         }
-        int[] intArr = getInts(strArr);
-        return calculateSum(intArr);
+        return calculateSum(getInts(strArr));
     }
 
     private static int[] getInts(String[] strArr) {
