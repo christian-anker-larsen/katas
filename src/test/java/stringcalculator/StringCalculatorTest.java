@@ -18,14 +18,12 @@ class StringCalculatorTest {
 
     @Test
     void isEmpty() {
-        int sum = stringCalculator.addNumbers("");
-        assertEquals(0, sum);
+        assertEquals(0, stringCalculator.addNumbers(""));
     }
 
     @Test
     void testSingleDigit() {
-        int sum = stringCalculator.addNumbers("5");
-        assertEquals(5, sum);
+        assertEquals(5, stringCalculator.addNumbers("5"));
     }
 
     @ParameterizedTest
