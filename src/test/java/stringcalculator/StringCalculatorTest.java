@@ -6,6 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static stringcalculator.StringCalculator.add;
 
 class StringCalculatorTest {
 
@@ -18,7 +19,7 @@ class StringCalculatorTest {
 
     @Test
     void isEmpty() {
-        assertEquals(0, stringCalculator.addNumbers(""));
+        assertEquals(0, add(""));
     }
 
     @Test
@@ -33,6 +34,6 @@ class StringCalculatorTest {
             "'5,6', 11"
     })
     void parameterisedTest(String numbers, int expectedSum) {
-        assertEquals(expectedSum, StringCalculator.add(numbers));
+        assertEquals(expectedSum, add(numbers));
     }
 }
