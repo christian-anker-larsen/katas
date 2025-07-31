@@ -22,4 +22,9 @@ class StringCalculatorTest {
         assertEquals(3, sum);
     }
 
+    @Test
+    void isEmpty(){
+
+    }
+
 }
