@@ -15,7 +15,6 @@ public class StringCalculator {
 
     private static int[] getInts(String[] strArr) {
         int[] result = new int[strArr.length];
-
         for (int i = 0; i < strArr.length; i++) {
             result[i] = Integer.parseInt(strArr[i]);
         }
