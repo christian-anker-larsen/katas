@@ -30,4 +30,9 @@ class StringCalculatorTest {
         assertEquals(0,sum);
     }
 
+    @Test
+    void testAdd2Numbers2() {
+
+    }
+
 }
