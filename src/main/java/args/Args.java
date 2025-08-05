@@ -8,9 +8,6 @@ public class Args {
     }
     
     public boolean getBoolean(char flag) {
-        if (flag == 'p') {
-            return false;
-        }
-        return arguments.length > 0;
+        return arguments.length > 0 && arguments[0].equals("-" + flag);
     }
 }
