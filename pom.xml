@@ -20,6 +20,11 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>net.gamrath</groupId>
+            <artifactId>junit-predict</artifactId>
+            <version>0.2.0</version>
+        </dependency>
     </dependencies>
 
 </project>
