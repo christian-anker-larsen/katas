@@ -21,17 +21,9 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void shouldReturnFizzGiven3() {
+    void shouldReturnFizzGivenMultipleOf3() {
         assertEquals("Fizz",fizzBuzz(3));
-    }
-
-    @Test
-    void shouldReturnFizzGiven6() {
         assertEquals("Fizz",fizzBuzz(6));
-    }
-
-    @Test
-    void shouldReturnFizzGiven9() {
         assertEquals("Fizz",fizzBuzz(9));
     }
 
