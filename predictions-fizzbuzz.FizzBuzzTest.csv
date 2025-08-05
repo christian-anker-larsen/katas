@@ -25,4 +25,5 @@ ANY_FAIL,true
 ALL_PASS,true
 ALL_PASS,true
 ALL_PASS,true
-STATS: hits=27, misses=0
+ALL_PASS,true
+STATS: hits=28, misses=0
