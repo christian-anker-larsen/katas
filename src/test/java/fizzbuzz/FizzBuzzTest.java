@@ -4,6 +4,8 @@ import net.gamrath.junitpredict.Predict;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -20,11 +22,10 @@ public class FizzBuzzTest {
         assertEquals("2", fizzBuzz(2));
     }
 
-    @Test
-    void shouldReturnFizzGivenMultipleOf3() {
-        assertEquals("Fizz",fizzBuzz(3));
-        assertEquals("Fizz",fizzBuzz(6));
-        assertEquals("Fizz",fizzBuzz(9));
+    @ParameterizedTest
+    @ValueSource(ints = {3, 6, 9})
+    void shouldReturnFizzGivenMultipleOf3(int input) {
+        assertEquals("Fizz",fizzBuzz(input));
     }
 
     private String fizzBuzz(int i) {
