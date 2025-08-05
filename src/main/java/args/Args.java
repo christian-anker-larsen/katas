@@ -17,6 +17,9 @@ public class Args {
     }
     
     public String getString(char flag) {
-        return arguments[1];
+        if (arguments[0].equals("-" + flag)) {
+            return arguments[1];
+        }
+        return "";
     }
 }

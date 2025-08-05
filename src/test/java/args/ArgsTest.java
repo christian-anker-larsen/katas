@@ -45,4 +45,10 @@ public class ArgsTest {
         Args args = new Args("d*", new String[]{"-d", "/var/log"});
         assertEquals("/var/log", args.getString('d'));
     }
+    
+    @org.junit.jupiter.api.Test
+    public void shouldReturnEmptyStringWhenDifferentFlagPresent() {
+        Args args = new Args("d*,p*", new String[]{"-d", "/var/log"});
+        assertEquals("", args.getString('p'));
+    }
 }
