@@ -36,7 +36,7 @@ public class FizzBuzzTest {
     }
 
     private String fizzBuzz(int i) {
-        if (i == 3 || i == 6 || i == 9) return "Fizz";
+        if (i % 3 == 0) return "Fizz";
         return String.valueOf(i);
     }
 }
