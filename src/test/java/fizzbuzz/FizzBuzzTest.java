@@ -5,16 +5,21 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(Predict.class)
 public class FizzBuzzTest {
-    @Test
+    @ParameterizedTest
+    @CsvSource({
+        "1, 1",
+        "2, 2",
+    })
     @DisplayName("shouldReturn1When1IsGiven")
-    void shouldReturn1When1IsGiven() {
-        assertEquals("1",fizzBuzz(1));
+    void shouldReturn1When1IsGiven(int input, String expected) {
+        assertEquals(expected,fizzBuzz(input));
     }
 
     @Test
