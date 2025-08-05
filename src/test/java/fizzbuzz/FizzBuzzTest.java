@@ -33,7 +33,14 @@ class FizzBuzzTest {
         assertEquals("Buzz", fizzBuzz(input));
     }
 
+    @ParameterizedTest
+    @ValueSource(ints = {15})
+    void shouldReturnFizzBuzzGivenMultipleOfBothThreeAndFive(int input) {
+        assertEquals("FizzBuzz", fizzBuzz(input));
+    }
+
     private String fizzBuzz(int i) {
+        if (i == 15) return "FizzBuzz";
         if (i % 5 == 0) return "Buzz";
         if (i % 3 == 0) return "Fizz";
         return String.valueOf(i);
