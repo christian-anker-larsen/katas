@@ -2,7 +2,6 @@ package fizzbuzz;
 
 import net.gamrath.junitpredict.Predict;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -20,11 +19,6 @@ public class FizzBuzzTest {
     @DisplayName("shouldReturn1When1IsGiven")
     void shouldReturn1When1IsGiven(int input, String expected) {
         assertEquals(expected,fizzBuzz(input));
-    }
-
-    @Test
-    void shouldReturn2Given2() {
-        assertEquals("2", fizzBuzz(2));
     }
 
     @ParameterizedTest
