@@ -1,0 +1,5 @@
+---
+alwaysApply: false
+---
+
+When running tests, always run all the tests in the test class.
