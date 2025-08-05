@@ -10,7 +10,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(Predict.class)
-public class FizzBuzzTest {
+class FizzBuzzTest {
     @ParameterizedTest
     @CsvSource({
         "1, 1",
