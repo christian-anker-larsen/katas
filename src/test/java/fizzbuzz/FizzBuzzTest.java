@@ -20,7 +20,13 @@ public class FizzBuzzTest {
         assertEquals("2", fizzBuzz(2));
     }
 
+    @Test
+    void shouldReturnFizzGiven3() {
+        assertEquals("Fizz",fizzBuzz(3));
+    }
+
     private String fizzBuzz(int i) {
+        if (i == 3) return "Fizz";
         return String.valueOf(i);
     }
 }
