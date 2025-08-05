@@ -39,11 +39,11 @@ class FizzBuzzTest {
         assertEquals("FizzBuzz", fizzBuzz(input));
     }
 
-    private String fizzBuzz(int i) {
+    private String fizzBuzz(int number) {
         String result = "";
-        if (isMultipleOfThree(i)) result += "Fizz";
-        if (isMultipleOfFive(i)) result += "Buzz";
-        return result.isEmpty() ? String.valueOf(i) : result;
+        if (isMultipleOfThree(number)) result += "Fizz";
+        if (isMultipleOfFive(number)) result += "Buzz";
+        return result.isEmpty() ? String.valueOf(number) : result;
     }
 
     private boolean isMultipleOfFive(int i) {
