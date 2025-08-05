@@ -5,4 +5,10 @@ ALL_PASS,true
 ANY_FAIL,true
 ALL_PASS,true
 ALL_PASS,true
-STATS: hits=7, misses=0
+ALL_PASS,true
+ANY_FAIL,true
+ALL_PASS,true
+ANY_FAIL,true
+ANY_FAIL,true
+ALL_PASS,true
+STATS: hits=13, misses=0

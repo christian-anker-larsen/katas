@@ -3,6 +3,7 @@ package args;
 import org.junit.jupiter.api.extension.ExtendWith;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import net.gamrath.junitpredict.Predict;
 
@@ -25,5 +26,17 @@ public class ArgsTest {
     public void shouldReturnFalseWhenDifferentFlagIsPresent() {
         Args args = new Args("l,p", new String[]{"-l"});
         assertFalse(args.getBoolean('p'));
+    }
+    
+    @org.junit.jupiter.api.Test
+    public void shouldFindFlagWhenNotFirstArgument() {
+        Args args = new Args("l,p", new String[]{"-p", "-l"});
+        assertTrue(args.getBoolean('l'));
+    }
+    
+    @org.junit.jupiter.api.Test
+    public void shouldParseStringFlag() {
+        Args args = new Args("d*", new String[]{"-d", "/usr/logs"});
+        assertEquals("/usr/logs", args.getString('d'));
     }
 }

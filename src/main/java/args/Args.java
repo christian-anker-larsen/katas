@@ -8,6 +8,15 @@ public class Args {
     }
     
     public boolean getBoolean(char flag) {
-        return arguments.length > 0 && arguments[0].equals("-" + flag);
+        for (String arg : arguments) {
+            if (arg.equals("-" + flag)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public String getString(char flag) {
+        return "/usr/logs";
     }
 }
