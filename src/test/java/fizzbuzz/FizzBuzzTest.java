@@ -28,13 +28,14 @@ public class FizzBuzzTest {
         assertEquals("Fizz",fizzBuzz(input));
     }
 
-    @Test
-    void shouldReturnBuzzGiven5() {
-        assertEquals("Buzz", fizzBuzz(5));
+    @ParameterizedTest
+    @ValueSource(ints = {5, 10})
+    void shouldReturnBuzzGivenMultipleOf5(int input) {
+        assertEquals("Buzz", fizzBuzz(input));
     }
 
     private String fizzBuzz(int i) {
-        if (i == 5) return "Buzz";
+        if (i % 5 == 0) return "Buzz";
         if (i % 3 == 0) return "Fizz";
         return String.valueOf(i);
     }
