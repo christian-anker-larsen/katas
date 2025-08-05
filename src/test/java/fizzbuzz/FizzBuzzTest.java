@@ -42,8 +42,12 @@ class FizzBuzzTest {
     private String fizzBuzz(int i) {
         String result = "";
         if (isMultipleOfThree(i)) result += "Fizz";
-        if (i % 5 == 0) result += "Buzz";
+        if (isMultipleOfFive(i)) result += "Buzz";
         return result.isEmpty() ? String.valueOf(i) : result;
+    }
+
+    private boolean isMultipleOfFive(int i) {
+        return i % 5 == 0;
     }
 
     private boolean isMultipleOfThree(int i) {
