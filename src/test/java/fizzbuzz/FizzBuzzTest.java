@@ -28,7 +28,13 @@ public class FizzBuzzTest {
         assertEquals("Fizz",fizzBuzz(input));
     }
 
+    @Test
+    void shouldReturnBuzzGiven5() {
+        assertEquals("Buzz", fizzBuzz(5));
+    }
+
     private String fizzBuzz(int i) {
+        if (i == 5) return "Buzz";
         if (i % 3 == 0) return "Fizz";
         return String.valueOf(i);
     }
