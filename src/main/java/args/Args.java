@@ -17,6 +17,6 @@ public class Args {
     }
     
     public String getString(char flag) {
-        return "/usr/logs";
+        return arguments[1];
     }
 }

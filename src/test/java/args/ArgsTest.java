@@ -39,4 +39,10 @@ public class ArgsTest {
         Args args = new Args("d*", new String[]{"-d", "/usr/logs"});
         assertEquals("/usr/logs", args.getString('d'));
     }
+    
+    @org.junit.jupiter.api.Test
+    public void shouldParseDifferentStringValue() {
+        Args args = new Args("d*", new String[]{"-d", "/var/log"});
+        assertEquals("/var/log", args.getString('d'));
+    }
 }
