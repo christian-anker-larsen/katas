@@ -15,7 +15,12 @@ public class FizzBuzzTest {
         assertEquals("1",fizzBuzz(1));
     }
 
+    @Test
+    void shouldReturn2Given2() {
+        assertEquals("2", fizzBuzz(2));
+    }
+
     private String fizzBuzz(int i) {
-        return "1";
+        return String.valueOf(i);
     }
 }
