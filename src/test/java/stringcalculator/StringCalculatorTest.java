@@ -1,12 +1,15 @@
 package stringcalculator;
 
+import net.gamrath.junitpredict.Predict;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static stringcalculator.StringCalculator.add;
 
+@ExtendWith(Predict.class)
 class StringCalculatorTest {
 
     @Test
