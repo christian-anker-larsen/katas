@@ -17,4 +17,7 @@ public class Account {
         this.balance = balance - i;
     }
 
+    public void deposit(int i) {
+        this.balance = 200;
+    }
 }

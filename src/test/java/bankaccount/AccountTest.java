@@ -21,6 +21,7 @@ class AccountTest {
     void deposit100() {
         Account account = new Account();
         account.setBalance(100);
-        assertEquals(100,account.getBalance());
+        account.deposit(100);
+        assertEquals(200,account.getBalance());
     }
 }
