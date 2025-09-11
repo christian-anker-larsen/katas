@@ -12,8 +12,8 @@ class AccountTest {
     @Test
     void withdraw100() {
         Account account = new Account();
-        account.withdraw(100);
-        account.setBalance(50);
+        account.setBalance(100);
+        account.withdraw(50);
         assertEquals(50,account.balance);
     }
 }
