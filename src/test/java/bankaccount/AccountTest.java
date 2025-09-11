@@ -21,7 +21,7 @@ class AccountTest {
     void withdraw100() {
         account.setBalance(100);
         account.withdraw(50);
-        assertEquals(50,account.balance);
+        assertEquals(50,account.getBalance());
     }
 
     @Test
