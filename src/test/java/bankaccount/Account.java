@@ -21,7 +21,7 @@ public class Account {
         this.balance += i;
     }
 
-    public String getStatement() {
+    public String printStatement() {
         return "Account Balance: " + this.balance;
     }
 }
