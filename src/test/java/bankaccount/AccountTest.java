@@ -38,4 +38,11 @@ class AccountTest {
         account.setBalance(100);
         assertEquals("Account Balance: 100", account.printStatement());
     }
+
+    @Test
+    void printStatementContainsBalanceAndDeposit() {
+        account.setBalance(100);
+        account.deposit(50);
+        assertEquals("Account Balance: 150", account.printStatement());
+    }
 }
