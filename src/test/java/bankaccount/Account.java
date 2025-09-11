@@ -20,4 +20,8 @@ public class Account {
     public void deposit(int i) {
         this.balance += i;
     }
+
+    public String getStatement() {
+        return "Account Balance: " + this.balance;
+    }
 }

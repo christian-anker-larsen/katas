@@ -35,6 +35,7 @@ class AccountTest {
 
     @Test
     void testPrintStatement(){
+        account.setBalance(100);
         assertEquals("Account Balance: 100", account.getStatement());
     }
 }
