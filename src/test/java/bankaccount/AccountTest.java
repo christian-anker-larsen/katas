@@ -15,23 +15,25 @@ class AccountTest {
     @BeforeEach
     void setUp() {
         account = new Account();
-        account.setBalance(100);
     }
 
     @Test
     void withdraw100() {
+        account.setBalance(100);
         account.withdraw(50);
         assertEquals(50,account.balance);
     }
 
     @Test
     void deposit100() {
+        account.setBalance(100);
         account.deposit(100);
         assertEquals(200,account.getBalance());
     }
 
     @Test
     void deposit200() {
+        account.setBalance(100);
         account.deposit(200);
         assertEquals(300, account.getBalance());
     }
