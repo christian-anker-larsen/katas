@@ -29,12 +29,7 @@ class AccountTest {
         account.setBalance(100);
         account.deposit(100);
         assertEquals(200,account.getBalance());
-    }
-
-    @Test
-    void deposit200() {
-        account.setBalance(100);
         account.deposit(200);
-        assertEquals(300, account.getBalance());
+        assertEquals(400, account.getBalance());
     }
 }
