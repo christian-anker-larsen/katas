@@ -32,4 +32,9 @@ class AccountTest {
         account.deposit(200);
         assertEquals(400, account.getBalance());
     }
+
+    @Test
+    void testPrintStatement(){
+        assertEquals("Account Balance: 100", account.getStatement());
+    }
 }
