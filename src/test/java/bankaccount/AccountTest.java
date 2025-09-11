@@ -24,4 +24,12 @@ class AccountTest {
         account.deposit(100);
         assertEquals(200,account.getBalance());
     }
+
+    @Test
+    void deposit200() {
+        Account account = new Account();
+        account.setBalance(100);
+        account.deposit(200);
+        assertEquals(300,account.getBalance());
+    }
 }

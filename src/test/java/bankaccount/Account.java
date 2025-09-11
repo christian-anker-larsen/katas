@@ -18,6 +18,6 @@ public class Account {
     }
 
     public void deposit(int i) {
-        this.balance = 200;
+        this.balance += i;
     }
 }
