@@ -3,7 +3,7 @@ package bankaccount;
 
 public class Account {
 
-    public int balance;
+    private int balance;
 
     public int getBalance() {
         return balance;
