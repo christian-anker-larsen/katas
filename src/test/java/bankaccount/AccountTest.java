@@ -43,6 +43,6 @@ class AccountTest {
     void printStatementContainsBalanceAndDeposit() {
         account.setBalance(100);
         account.deposit(50);
-        assertEquals("Account Balance: 150", account.printStatement());
+        assertEquals("Account Balance: 100, Deposit 50", account.printStatement());
     }
 }
