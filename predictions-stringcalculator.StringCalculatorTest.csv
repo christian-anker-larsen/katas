@@ -1,2 +1,3 @@
 ALL_PASS,true
-STATS: hits=1, misses=0
+ALL_PASS,true
+STATS: hits=2, misses=0
