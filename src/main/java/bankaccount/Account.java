@@ -7,15 +7,15 @@ public class Account {
         this.balance = initialBalance;
     }
 
-    public void deposit(int amountToDeposit) {
-        this.balance += amountToDeposit;
+    public void deposit(int amount) {
+        this.balance += amount;
     }
 
     public int getBalance() {
         return balance;
     }
 
-    public void withdraw(int amountToWithdraw) {
-        balance -= amountToWithdraw;
+    public void withdraw(int amount) {
+        balance -= amount;
     }
 }
