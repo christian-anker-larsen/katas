@@ -1,10 +1,18 @@
 package bankaccount;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AccountTest {
+
+    private Account account;
+
+    @BeforeEach
+    void setUp() {
+        account = new Account(100);
+    }
 
     @Test
     void testDeposits() {
@@ -21,7 +29,6 @@ class AccountTest {
 
     @Test
     void testWithdraws() {
-        Account account = new Account(100);
         account.withdraw(50);
         assertEquals(50, account.getBalance());
     }
