@@ -18,6 +18,11 @@ class AccountTest {
         assertEquals(300, account.getBalance());
 
     }
-
+@Test
+    void testWithdraws() {
+        Account account = new Account();
+        account.withdraw(50);
+        assertEquals(50,account.getBalance());
+}
 
 }
