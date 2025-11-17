@@ -12,12 +12,12 @@ class AccountTest {
         Account account = new Account();
         account.deposit(100);
 
-        int balance = account.getBalance();
-
-        assertEquals(100, balance);
+        assertEquals(100, account.getBalance());
 
         account.deposit(200);
         assertEquals(300, account.getBalance());
 
     }
+
+
 }
