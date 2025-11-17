@@ -9,13 +9,13 @@ class AccountTest {
     @Test
     void testDeposits() {
         // Test code for deposits
-        Account account = new Account(0);
+        Account account = new Account(100);
         account.deposit(100);
 
-        assertEquals(100, account.getBalance());
+        assertEquals(200, account.getBalance());
 
         account.deposit(200);
-        assertEquals(300, account.getBalance());
+        assertEquals(400, account.getBalance());
 
     }
 
