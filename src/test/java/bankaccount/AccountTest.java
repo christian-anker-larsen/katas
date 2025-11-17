@@ -17,7 +17,6 @@ class AccountTest {
     @Test
     void testDeposits() {
         // Test code for deposits
-        Account account = new Account(100);
         account.deposit(100);
 
         assertEquals(200, account.getBalance());
