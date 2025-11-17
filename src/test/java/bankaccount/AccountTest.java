@@ -3,6 +3,8 @@ package bankaccount;
 import Account.Account;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class AccountTest {
 
     @Test
@@ -11,6 +13,9 @@ class AccountTest {
         Account account = new Account();
         account.deposit(100);
 
-//        int balance = account.getBalance();
+        int balance = account.getBalance();
+
+        assertEquals(100, balance);
+
     }
 }
