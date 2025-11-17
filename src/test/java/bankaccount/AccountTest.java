@@ -17,5 +17,8 @@ class AccountTest {
 
         assertEquals(100, balance);
 
+        account.deposit(200);
+        assertEquals(300, account.getBalance());
+
     }
 }
