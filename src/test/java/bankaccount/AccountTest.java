@@ -9,7 +9,7 @@ class AccountTest {
     @Test
     void testDeposits() {
         // Test code for deposits
-        Account account = new Account();
+        Account account = new Account(0);
         account.deposit(100);
 
         assertEquals(100, account.getBalance());
@@ -18,11 +18,11 @@ class AccountTest {
         assertEquals(300, account.getBalance());
 
     }
-@Test
-    void testWithdraws() {
-        Account account = new Account();
-        account.withdraw(50);
-        assertEquals(50,account.getBalance());
-}
 
+    @Test
+    void testWithdraws() {
+        Account account = new Account(100);
+        account.withdraw(50);
+        assertEquals(50, account.getBalance());
+    }
 }
