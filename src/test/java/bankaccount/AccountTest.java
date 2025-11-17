@@ -31,4 +31,15 @@ class AccountTest {
         account.withdraw(50);
         assertEquals(50, account.getBalance());
     }
+
+    @Test
+    void testPrintStatement() {
+        String expected = """
+                Date Amount Balance
+                17.11.2025 0 100
+                """;
+        account.printStatement();
+
+        assertEquals();
+    }
 }
