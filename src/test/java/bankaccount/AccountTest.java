@@ -38,8 +38,7 @@ class AccountTest {
                 Date Amount Balance
                 17.11.2025 0 100
                 """;
-        account.printStatement();
 
-        assertEquals();
+        assertEquals(expected, account.printStatement());
     }
 }

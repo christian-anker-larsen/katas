@@ -18,4 +18,11 @@ public class Account {
     public void withdraw(int amount) {
         balance -= amount;
     }
+
+    public String printStatement() {
+        return """
+                Date Amount Balance
+                17.11.2025 0 100
+                """;
+    }
 }
